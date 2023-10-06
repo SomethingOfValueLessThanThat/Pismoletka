@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Výběr lekce</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="bartender">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div class="bartender">
+    <div class="bar-out"></div>
+    <div class="bar-out"></div>
+    <div class="bar-out"></div>
+    <div class="bar-out"></div>
+    <div class="bar-out"></div>
+  </div>
+   <div class="div-navbar">
+    <div class="div-navbar-left">
+      <a href="index.html" onclick="handleClick(event)">Písmoletka</a>
+    </div>
+    <div class="div-navbar-right">
+      <a href="index.html#price" onclick="handleClick(event)">Ceník</a>
+      <p>/</p>
+      <a href="">Lekce</a>
+      <p>/</p>
+      <a href="">Psací test</a>
+      <p>/</p>
+      <a href="">O projektu</a>
+      <img src="images/line-nav.png" alt="" class="img-navbar">
+    </div>
+  </div>
+  <div class="div-lection-wrapper">
+    <div class="div-lection-text">
+      <h3>Základní sada</h3>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>1</h2>
+        </div>
+        <p>Lekce: d, f, j, k, a, ů</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>2</h2>
+        </div>
+        <p>Lekce: s, l, r, u</p>
+      </a>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>3</h2>
+        </div>
+        <p>Lekce: i, čárka, q, p</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>4</h2>
+        </div>
+        <p>Lekce: g, h e, w, o</p>
+      </a>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>5</h2>
+        </div>
+        <p>Lekce: z, t, ú, m</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>6</h2>
+        </div>
+        <p>Lekce: levý shift, tečka, v</p>
+      </a>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>7</h2>
+        </div>
+        <p>Lekce: pravý shift, y, pomlčka</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover purple">
+          <h2>8</h2>
+        </div>
+        <p>Lekce: c, n, b, x, Caps Lock</p>
+      </a>
+    </div>
+  </div>
+  <div class="div-lection-wrapper">
+    <div class="div-lection-text">
+      <h3>Rozšířená sada</h3>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover green">
+          <h2>9</h2>
+        </div>
+        <p>Lekce: í, č</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover green">
+          <h2>12</h2>
+        </div>
+        <p>Lekce: ě, ý</p>
+      </a>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover green">
+          <h2>10</h2>
+        </div>
+        <p>Lekce: á, ř</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover green">
+          <h2>13</h2>
+        </div>
+        <p>Lekce: ž, háčky</p>
+      </a>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover green">
+          <h2>11</h2>
+        </div>
+        <p>Lekce: é, š</p>
+      </a>
+      <a href="" class="a-lection backgroundnone"></a>
+    </div>
+  </div>
+  <div class="div-lection-wrapper">
+    <div class="div-lection-text">
+      <h3>Procvičování</h3>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover orange">
+          <h2>14</h2>
+        </div>
+        <p>Lekce: Český texty</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover orange">
+          <h2>16</h2>
+        </div>
+        <p>Lekce: Německé texty</p>
+      </a>
+    </div>
+    <div class="div-lection-holder">
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover orange">
+          <h2>15</h2>
+        </div>
+        <p>Lekce: Anglické texty</p>
+      </a>
+      <a href="" class="a-lection">
+        <div class="div-lection-albumcover orange">
+          <h2>17</h2>
+        </div>
+        <p>Lekce: bonus</p>
+      </a>
+    </div>
+  </div>
+  <div class="div-space"></div>
+  <script src="javascript/global.js"></script>
+</body>
+</html>
