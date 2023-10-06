@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cz" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Lekce xxx</title>
+    <link rel="stylesheet" href="styles/typing.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="body-no-scroll-mobile">
+    <div class="bartender">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="bartender">
+      <div class="bar-out"></div>
+      <div class="bar-out"></div>
+      <div class="bar-out"></div>
+      <div class="bar-out"></div>
+      <div class="bar-out"></div>
+    </div>
+    <div class="div-rotate">
+      <h3>"Otočte na šířku"</h3>
+    </div>
+    <div class="div-wrapper">
+      <div class="div-gradient-box-black">
+        <div class="div-gradient-navbar">
+          <div class="div-gradient-navbar-left">
+            <a href="">Písmoletka</a>
+          </div>
+          <div class="div-gradient-navbar-right">
+            <a href="">Ceník</a>
+            <p>/</p>
+            <a href="">Lekce</a>
+            <p>/</p>
+            <a href="">Psací test</a>
+            <p>/</p>
+            <a href="">O projektu</a>
+            <img src="images/line-nav.png" alt="" class="img-navbar">
+          </div>
+        </div>
+        <div class="div-gradient-navigation-wrapper">
+          <div class="div-gradient-navigation">
+            <div class="div-result-details">
+              <div class="wpm">
+                <h3 class="h3-left">Úhozů/min: <span>0</span></h3>
+              </div>
+              <div class="cpm">
+                <h3>Celkem znaků: <span>0</span></h3>
+              </div>
+              <div class="mistake">
+                <h3>Počet chyb: <span>0</span></h3>
+              </div>
+            </div>
+            <a href="" onclick="handleClick(event)"><br>Opakovat</a>
+          </div>
+          <div class="div-gradient-navigation right">
+            <div class="div-lection-tutorial">
+              <div class="time">
+                <h3>Zbývající čas: <span>60</span>s</h3>
+              </div>
+              <div class="correct">
+                <h3>Správně znaků: <span>0</span></h3>
+              </div>
+              <div class="accuracy">
+                <h3>Přesnost: <span>0</span>%</h3>
+              </div>
+              <p class="p-regular">
+                <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-typing-wrapper">
+          <input type="text" class="input-field">
+          <div class="div-typing-content">
+            <div class="typing-text">
+              <h3></h3>
+            </div>
+          </div>
+      </div>
+      <div></div>   
+    </div>
+    
+    <script>
+
+      // Define an array of words
+      const wordList = [
+        "doba",
+        "mluvit",
+        "když",
+        "starý",
+        "zůstat",
+        "mluvit",
+        "něco",
+        "jiný",
+        "kiwi",
+        "hrát",
+        "mango",
+        "aby",
+        "už",
+        "život",
+        "hodně",
+        "čekat",
+        "jenž",
+        "kajak",
+        "kočka",
+        "široký",
+        "řeka",
+        "lidský",
+        "záležet",
+        "zimní",
+        "smrků",
+        "částky",
+        "pračky",
+        "emoji",
+        "smajlík",
+        "jíst",
+        "získat",
+        "pokyn",
+        "řízení",
+        "řešit",
+        "řádky",
+        "milovat",
+        "program",
+        "chálovat",
+        "kůže",
+        "bojovat",
+        "kouř",
+        "nic",
+        "všechny",
+        "žádný",
+        "město",
+        "pravidlo",
+        "pokaždé",
+        "rádoby",
+        "servis",
+        "sníh",
+        "odlišit",
+        "odmítnout",
+        "srdce",
+        "bílý",
+        "když",
+        "peníze",
+        "úspěch",
+        "před",
+        "nemožný",
+        "žlutý",
+        "hodina",
+        "klesnout",
+        "nejníže",
+        "prync",
+        "název",
+        "klávesnice",
+        "počítač",
+        "myš",
+        "židle",
+        "zbohatnout",
+        "obléct",
+        "zisk",
+        "bonbóny",
+        "šperky",
+        "drahý",
+        "klub",
+        "vyprodáno",
+        "vládnout",
+        "shrábnout",
+        "fontána",
+        "storýčko",
+        "hafo",
+        "chystat",
+        "kopřiva",
+        "téct",
+        "vygooglit",
+        "instagram",
+        "šeptat",
+        "kvíz",
+        "šachy",
+        "klíčenka",
+        "zvoňit",
+        "kolotoč",
+        "dokument",
+        "odpisy",
+        "fiskální",
+        "politika",
+        "daňit",
+        "peníze",
+        "ekonomika",
+        "svět",
+        "ležet",
+        "odpočívat",
+        "sklo",
+        "textil",
+        "sluchátka",
+        "rozpočet",
+        "vyprodat",
+        "výhled",
+        "podnikat",
+        "účetní",
+        "email",
+        "vzdělení",
+        "základ",
+        "školník",
+        "oběd",
+        "objet",
+        "zajistit",
+        "předělat",
+        "činnosti",
+        "předpis",
+        "profil",
+        "ukončit",
+        "občan",
+        "uzávěrka",
+        "příjemka",
+        "výčet",
+        "vynahradit",
+        "odložit",
+        "právo",
+        "xylofon",
+        "facebook",
+        "nástroj",
+        "metafora",
+        "tečka",
+        "otazník",
+        "vykřikník",
+        "podtržítko",
+        "uvozovky",
+        "středník",
+        "háček",
+        "čárka",
+        "lomítko",
+        "procento",
+        "apostrof",
+        "cedník",
+        "zmrzlina",
+        "ležet",
+        "kouzlit",
+        "čarovat",
+        "zavináč",
+        "hashtag",
+        "závorky",
+        "složit",
+        "vlnka",
+        "opravit",
+        "zkusit",
+        "rovnat",
+        "plus",
+        "mínus",
+        "pomlčka",
+        "čtečka",
+        "backspace",
+        "šipky",
+        "laptop",
+        "operovat",
+        // Add more words as needed
+      ];
+
+      // Function to randomly select 'n' words from the array
+      function getRandomWordsFromArray(array, n) {
+        const shuffled = array.slice().sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, n);
+      }
+
+      // Combine the randomly selected words into one list
+      function combineRandomWords() {
+        const selectedWords = getRandomWordsFromArray(wordList, 30);
+        const combinedList = selectedWords.join(' ');
+        return combinedList;
+      }
+
+      // Call the function and log the result
+      const randomWordList = combineRandomWords();
+      console.log(randomWordList);
+
+      const paragraphs = [
+          randomWordList,
+      ];
+
+    </script>
+    <script src="javascript/typingtest.js"></script>
+    
+  </body>
+</html> 

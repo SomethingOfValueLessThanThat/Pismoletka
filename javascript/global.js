@@ -10,7 +10,6 @@ window.onpointermove = event => {
   }, { duration: 2000, fill: "forwards" });
 }
 
-
 // Page transtion effect
 function handleClick(e) {
   e.preventDefault();
