@@ -179,10 +179,10 @@ div {
 .div-difficulty-wrapper {
   width: calc(100% - 40px);
   max-width: 920px;
-  margin-top: 64px;
+  margin: 64px 0 64px 0;
 }
 
-.div-difficulty-holder-first{
+.div-difficulty-holder-first {
   flex-direction: row;
   justify-content: start;
   width: 100%;
@@ -190,7 +190,7 @@ div {
   border-bottom: 1px solid rgba(95, 95, 95, 0.45);;
 }
 
-.a-difficulty-holder{
+.a-difficulty-holder {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -209,12 +209,14 @@ div {
   width: 25%;
   align-items: start;
   padding-left: 20px;
+  pointer-events: none;
 }
 
 .div-difficulty-right {
   width: 50%;
   align-items: end;
   padding-right: 20px;
+  pointer-events: none;
 }
 
 .typing-text::-webkit-scrollbar {
@@ -414,18 +416,24 @@ h3 {
     width: 100px;
   }
 
+  .div-lection-name-wrapper {
+    height: 160px;
+  }
+
   .div-difficulty-left {
-    width: 35%;
-    padding-left: 10px;
+    width: 30%;
   }
   
   .div-difficulty-right {
-    width: 30%;
-    padding-right: 10px;
+    width: 40%;
   }
 
   .div-gradient-box-purple, .div-gradient-box-green, .div-gradient-box-orange {
     height: 200px;
+  }
+
+  .div-difficulty-holder-first, .a-difficulty-holder {
+    height: 48px;
   }
   
   .body-no-scroll-mobile {

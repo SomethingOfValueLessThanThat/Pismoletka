@@ -190,6 +190,7 @@ div {
 
 .a-lection p {
   text-align: left;
+  pointer-events: none;
 }
 
 .backgroundnone {
@@ -207,6 +208,7 @@ div {
   flex-shrink: 0;
   border-radius: 6px;
   margin-right: 24px;
+  pointer-events: none;
 }
 
 .bartender {
@@ -446,12 +448,7 @@ html {
     display: none;
   }
 
-  .div-lection-albumcover {
-    height: 64px;
-    margin: 0 12px 0 0;
-  }
-
-  .a-lection {
+   .a-lection {
     padding-right: 12px;
     margin-top: 16px;
   }
@@ -479,25 +476,6 @@ html {
     width: 100%;
   }
 }
-
-/* @media (max-width: 360px) {
-  .div-lection-wrapper h3{
-    text-align: left;
-  }
-
-  .div-lection-holder p {
-    display: none;
-  }
-
-  .a-lection {
-    padding: 0;
-  }
-
-  .div-lection-albumcover {
-    margin: 0;
-    width: 100%;
-  }
-}  */
 
 /*
 
