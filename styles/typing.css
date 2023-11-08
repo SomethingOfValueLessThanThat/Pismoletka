@@ -1,4 +1,8 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+@font-face {
+  font-family: Satoshityping;
+  src: url(/Písmoletka/images/Satoshityping.ttf);
+}
 
 * {
   font-family: 'Satoshi', sans-serif;
@@ -264,24 +268,31 @@ h3 {
   font-size: 32px;
   color: rgb(142, 142, 142);
   text-align: justify;
+  font-family: Satoshityping;
 }
 
 .typing-text h3 span {
   position: relative;
+  font-family: Satoshityping;
 }
 
 .typing-text h3 span.correct {
   color: white;
+  font-family: Satoshityping;
 }
 
 .typing-text h3 span.incorrect {
-  color: rgb(195, 78, 78);
+  color: rgb(233, 58, 58);
+  background-color: rgb(255, 164, 164);
+  border-radius: 4px;
+  font-family: Satoshityping;
 }
 
 .typing-text h3 span.active {
   color: #00d2d5;
   animation: blink 1s ease-in-out infinite;
   text-decoration: underline #00d2d5 4px;
+  font-family: Satoshityping;
 }
 
 @keyframes blink {
@@ -307,6 +318,15 @@ h3 {
 ::selection {
   color: none;
   background: none;
+}
+
+.div-404 {
+  width: calc(100% - 40px);
+}
+
+.div-404 h2 {
+  text-align: center;
+  display: none;
 }
 
 .bartender {
@@ -440,5 +460,14 @@ h3 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+  }
+
+  .div-404 h2 {
+    text-align: center;
+    display: inline;
+  }
+
+  .div-typing-wrapper {
+    display: none;
   }
 }

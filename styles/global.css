@@ -459,6 +459,11 @@ html {
   .p-section {
     margin: 12px 0 32px 0;
   }
+
+  .div-lection-albumcover {
+    height: 64px;
+    margin-right: 12px;
+  }
 }
 
 @media (max-width: 360px) {
